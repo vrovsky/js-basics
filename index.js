@@ -15,10 +15,9 @@
 
 // const man = Man(1);
 
-let number = 10;
-function increase(number){
-    number++;
-    return number;
+function maxOfTwo(a, b){
+    return ( a > b ) ? a : b;
+    // if (a > b) console.log(a + ' is bigger');
+    // else console.log(b + ' is bigger'); 
 }
-
-console.log(increase(number));
+console.log(maxOfTwo(6, 8), ' is bigger');
