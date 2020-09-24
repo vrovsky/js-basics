@@ -1,5 +1,4 @@
 function maxOfTwo(a, b){
-    // return ( a > b ) ? a : b;
     if (a > b) console.log(a + ' is bigger');
     else console.log(b + ' is bigger'); 
 }
