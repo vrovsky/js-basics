@@ -15,9 +15,29 @@
 
 // const man = Man(1);
 
-function maxOfTwo(a, b){
-    return ( a > b ) ? a : b;
-    // if (a > b) console.log(a + ' is bigger');
-    // else console.log(b + ' is bigger'); 
+// for(let key of Object.keys(man)){
+//     console.log(key, man[key]);
+// }
+
+// if ('lungs' in man) console.log('Yes');
+
+// let another = { ...man};
+
+// name = 'John'; 
+// let another1 = `This is ${name},
+// 'first' message`;
+
+// const date = new Date();
+
+
+function createAddress(street, city, zipCode){
+    return{
+        street,
+        city,
+        zipCode
+    }
 }
-console.log(maxOfTwo(6, 8), ' is bigger');
+let address = createAddress('Pushkina', 'Minsk', 220015);
+for(let key in address){
+    console.log(key, address[key]);
+}
