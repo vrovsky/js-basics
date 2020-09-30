@@ -61,16 +61,42 @@
 // });
 // console.log(allPositive);
 
-const numbers = [1, 2, -1, 3];
-const filtered = numbers.filter(n => n >= 0);
-const items = filtered.map(n => '<li>' + n + '</li>');
+// const numbers = [1, 2, -1, 3];
+// const filtered = numbers.filter(n => n >= 0);
+// const items = filtered.map(n => '<li>' + n + '</li>');
 
 
-const html = '<ul>' + items.join('') + '</ul>';  
-console.log(html);
+// const html = '<ul>' + items.join('') + '</ul>';  
+// console.log(html);
 
-// Filtered() and map() are chainable
+// // Filtered() and map() are chainable
 
-numbers
-.filter(n => n >= 0)
-.map(n => '<li>' + n + '</li>');
+// numbers
+// .filter(n => n >= 0)
+// .map(n => '<li>' + n + '</li>');
+
+
+
+
+
+// let numbers = [];
+// const numbers = arrayFromRange(-2, 2);
+// console.log(numbers);
+
+// function arrayFromRange(min, max){
+//     const output = [];
+//     for(min; min <= max; min++)
+//     output.push(min);
+//     return output;
+// };
+
+
+const numbers = [1, 2, 3, 4];
+
+console.log(numbers.includes(5));
+
+function includes(array, searchElement){
+    for(let n of array){
+        array[n] === searchElement;
+    }
+}
