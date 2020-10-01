@@ -8,10 +8,14 @@ function calculateGrade(marks){
         average = summary/a;
     }
     let mark; 
-    if (average >= 1 && average <= 59) mark = 'F';
-    else if(average >= 60 && average <= 69) mark = 'D';
-    else if(average >= 70 && average <= 79) mark = 'C';
-    else if(average >= 80 && average <= 89) mark = 'B';
-    else mark = 'A';
+    
+    switch (true){
+        case (average >= 1 && average <= 59): mark = 'F'; break; 
+        case (average >= 60 && average <= 69): mark = 'D'; break; 
+        case (average >= 70 && average <= 79): mark = 'C'; break; 
+        case (average >= 80 && average <= 89): mark = 'B'; break; 
+        default: mark = 'A';
+    }
+
     return mark;
 }
