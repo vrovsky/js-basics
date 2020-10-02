@@ -91,12 +91,58 @@
 // };
 
 
-const numbers = [1, 2, 3, 4];
+// const numbers = [1, 2, 3, 4];
 
-console.log(numbers.includes(5));
+// console.log(numbers.includes(1));
 
-function includes(array, searchElement){
-    for(let n of array){
-        array[n] === searchElement;
-    }
+// function includes(array, searchElement){
+//     for(let n of array){
+//         array[n] === searchElement;
+//     }    
+// }
+
+
+// const output = move(numbers, 1, -1);
+// console.log(output);
+
+// function move(array, index, offset) {
+    //     const position = index + offset;
+    //     if(position >= array.length || position < 0){
+        //         console.error('Invalid offset');
+        //     }
+        //     const output = [...array];
+        //     const element = output.splice(index, 1)[0];
+        //     output.splice(position, 0, element);
+        //     return output; 
+        // }
+        
+        
+        // const count = countOccurrences(numbers, 1);
+        // console.log(count);
+        
+        // function  countOccurrences(array, searchElement) {
+            //     // counter = 0;
+            //     // array.forEach(element => {
+                //     //     if(searchElement == element)
+                //     //     counter++;
+                //     //     });
+                //     //     return counter;
+                
+                //     const sum = array.reduce((counter, currentValue) => {
+                    //         if (currentValue == searchElement){
+                        //             counter++
+                        //         }
+                        //         return counter;
+                        //     });
+                        //     return sum;
+                        //     }
+                        
+
+const numbers = [1, 2, 3, 4,];
+const max = getMax(numbers);
+console.log(max);
+function getMax(array) {
+    array.reverse();
+    const max = array[0];
+    return max;
 }
