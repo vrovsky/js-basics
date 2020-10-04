@@ -10,11 +10,9 @@ function  countOccurrences(array, searchElement) {
     //     });
     //     return counter;
 
-    const sum = array.reduce((counter, currentValue) => {
-        if (currentValue == searchElement){
-            counter++
-        }
-        return counter;
-    });
-    return sum;
+    return array.reduce((accumulator, current) => {
+        const occurrence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator, current, searchElement);
+        return accumulator + occurrence;
+      }, 0);
     }
